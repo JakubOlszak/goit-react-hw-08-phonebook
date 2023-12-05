@@ -1,0 +1,23 @@
+@import-normalize; /* bring in normalize.css styles */
+
+body {
+  background: url(../public/wallpaper.jpg) center / cover no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+li {
+  margin: 0;
+  padding: 0;
+}
