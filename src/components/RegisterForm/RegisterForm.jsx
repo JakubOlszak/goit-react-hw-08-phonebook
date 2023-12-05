@@ -28,7 +28,7 @@ export const RegisterForm = () => {
         <Input
           type="text"
           name="name"
-          placeholder="Enter Name"
+          placeholder="Enter your name"
           pattern="^[^\d]+$"
           title="The name must contain only letters, apostrophes, hyphens and indents"
           required
@@ -53,7 +53,7 @@ export const RegisterForm = () => {
         <Input
           type="password"
           name="password"
-          placeholder="Enter password"
+          placeholder="Enter your password"
           pattern="^[a-zA-Z0-9!@#$%^&*()-_=+`~[\]{}|:<>/?]+$"
           title=
           "The password must contain only Latin letters (both upper and lower case), numbers and other symbols"

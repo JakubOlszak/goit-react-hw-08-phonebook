@@ -64,7 +64,7 @@ export const ContactForm = () => {
           <Input
             type="text"
             name="name"
-            placeholder="Enter Name"
+            placeholder="Enter name"
             value={name}
             onChange={handleChange}
             pattern="^[^\d]+$"
