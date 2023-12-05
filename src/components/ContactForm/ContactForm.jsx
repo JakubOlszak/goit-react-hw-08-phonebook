@@ -29,7 +29,7 @@ export const ContactForm = () => {
 
     
     if (isInContacts) {
-      alert(`${name} вже в контактах☝️`);
+      alert(`${name} already in contact☝️`);
 
       return;
     }
@@ -64,11 +64,12 @@ export const ContactForm = () => {
           <Input
             type="text"
             name="name"
-            placeholder="Введіть ім'я"
+            placeholder="Enter Name"
             value={name}
             onChange={handleChange}
             pattern="^[^\d]+$"
-            title="Ім'я має містити лише літери, апострофи, дефіси та відступи"
+            title="The name must contain only letters, apostrophes, hyphens and indents"
+
             required
           />
         </Label>
@@ -78,13 +79,13 @@ export const ContactForm = () => {
           <Input
             type="tel"
             name="number"
-            placeholder="Введіть номер телефону"
+            placeholder="Enter phone number"
             value={number}
             onChange={handleChange}
             pattern="\+\d{12}"
             minlength="13"
             maxlength="13"
-            title="Номер телефону має починатися з +, а потім 12 цифр"
+            title="Phone number must start with + followed by 12 digits"
             required
           />
         </Label>
