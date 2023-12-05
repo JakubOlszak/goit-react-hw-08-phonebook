@@ -15,39 +15,37 @@ const Login = lazy(() => import('pages/Login'));
 const Contacts = lazy(() => import('pages/Contacts'));
 
 export const App = () => {
-  const dispatch = useDispatch(); // Отримуємо функцію dispatch для відправки дій до Redux store
-  const { isRefreshing } = useAuth(); // Отримуємо стан аутентифікації користувача
+  const dispatch = useDispatch();  
+  const { isRefreshing } = useAuth();  
 
   useEffect(() => {
-    dispatch(refreshUser()); // Викликаємо функцію оновлення користувача при монтажі компонента або зміні dispatch
+    dispatch(refreshUser());  
   }, [dispatch]);
 
-  // Перевіряємо, чи триває процес оновлення користувача
-  // Якщо так, відображаємо текст "Оновлення користувача..."
-  // Якщо ні, відображаємо структуру маршрутизації додатка
+  
   return isRefreshing ? (
-    <p>Оновлення користувача...</p>
+    <p>User update...</p>
   ) : (
     <Wrapper>
       <Routes>
         <Route path="/" element={<Layout />}>
-          {/*Головна сторінка */}
+          { }
           <Route index element={<Home />} />
-          {/* Сторінка реєстрації користувача */}
+          { }
           <Route
             path="/register"
             element={
               <RestrictedRoute redirectTo="/login" component={<Register />} />
             }
           />
-          {/* Сторінка входу користувача */}
+          { }
           <Route
             path="/login"
             element={
               <RestrictedRoute redirectTo="/contacts" component={<Login />} />
             }
           />
-          {/* Сторінка контактів (доступна тільки для авторизованих користувачів) */}
+          { }
           <Route
             path="/contacts"
             element={
@@ -55,7 +53,7 @@ export const App = () => {
             }
           />
         </Route>
-        {/* Маршрут за замовчуванням (якщо ні один інший маршрут не співпадає) */}
+        { }
         <Route path="*" element={<Home />} />
       </Routes>
       <PhoneIcons />

@@ -2,7 +2,7 @@ import { useDispatch } from 'react-redux';
 import { register } from 'redux/auth/operations';
 import { Form, Label, Input, Button } from './RegisterForm.styles';
 
-// Компонент RegisterForm відповідає за форму реєстрації нового користувача
+ 
 export const RegisterForm = () => {
   const dispatch = useDispatch();
 
@@ -10,7 +10,7 @@ export const RegisterForm = () => {
     event.preventDefault();
     const form = event.currentTarget;
 
-    // Викликаємо дію register з параметрами name, email та password, які отримуємо зі значень полів форми
+     
     dispatch(
       register({
         name: form.elements.name.value,
@@ -18,7 +18,7 @@ export const RegisterForm = () => {
         password: form.elements.password.value,
       })
     );
-    form.reset(); // Очищуємо значення полів форми після відправки
+    form.reset();  
   };
 
   return (

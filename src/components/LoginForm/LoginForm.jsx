@@ -2,7 +2,7 @@ import { useDispatch } from 'react-redux';
 import { logIn } from 'redux/auth/operations';
 import { Form, Label, Input, Button } from './LoginForm.styled';
 
-// Компонент LoginForm відповідає за форму авторизації користувача
+ 
 export const LoginForm = () => {
   const dispatch = useDispatch();
 
@@ -10,14 +10,14 @@ export const LoginForm = () => {
     event.preventDefault();
     const form = event.currentTarget;
 
-    // Викликаємо дію logIn з параметрами email та password, які отримуємо зі значень полів форми
+ 
     dispatch(
       logIn({
         email: form.elements.email.value,
         password: form.elements.password.value,
       })
     );
-    form.reset(); // Очищуємо значення полів форми після відправки
+    form.reset();  
   };
 
   return (

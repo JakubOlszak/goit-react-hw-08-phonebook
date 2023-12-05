@@ -6,7 +6,7 @@ import { deleteContacts } from 'redux/contacts/operations';
 import { List, Item, Button } from './ContactList.styled';
 import { ReactComponent as DeleteIcon } from 'icons/delete.svg';
 
-// Компонент ContactList відповідає за відображення списку контактів
+ 
 export const ContactList = () => {
   const contacts = useSelector(selectVisibleContacts);
   const dispatch = useDispatch();
