@@ -39,7 +39,7 @@ export const LoginForm = () => {
         <Input
           type="password"
           name="password"
-          placeholder="Введіть пароль"
+          placeholder="Enter password"
           pattern="^[a-zA-Z0-9!@#$%^&*()-_=+`~[\]{}|:<>/?]+$"
           title="The password must contain only Latin letters (both upper and lower case), numbers and other symbols"
           required
