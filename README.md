@@ -1,56 +1,50 @@
-Використовуй цей
-[шаблон React-проекту](https://github.com/goitacademy/react-homework-template#readme)
-як стартову точку своєї програми.
+Use this one
+[react project template](https://github.com/goitacademy/react-homework-template#readme)
+as a starting point for your program.
 
-# Критерії приймання
+# Acceptance criteria
 
-- Створений репозиторій `goit-react-hw-08-phonebook`
-- При здачі домашньої роботи є посилання: на вихідні файли та робочу сторінку
-  проекту на `GitHub Pages`
-- Під час запуску коду завдання в консолі відсутні помилки та попередження.
-- Для кожного компонента є окрема папка з файлом React-компонента та файлом
-  стилів
-- Для компонентів описані `propTypes`
+- Created repository `goit-react-hw-08-phonebook`
+- When submitting homework, there is a link: to the source files and the work
+  page project on `GitHub Pages`
+- There are no errors and warnings in the console when running the task code.
+- For each component there is a separate folder with the React component file
+  and the file styles
+- `propTypes` are described for components
 
-## Книга контактів
+## Contact book
 
-Додай у програму «Книга контактів» можливість реєстрації, логіна та оновлення
-користувача, а також роботу з приватною колекцією контактів.
+Add the ability to register, login, and update to the "Contact Book" program
+user, as well as working with a private collection of contacts.
 
-### Бекенд
+### Backend
 
-Для цього завдання є готовий бекенд. Ознайомся з документацією. Він підтримує
-всі необхідні операції з колекцією контактів, а також реєстрацію, логін та
-оновлення користувача за допомогою JWT. Використовуй його замість твого бекенда
-створеного через сервіс mockapi.io.
+There is a ready-made backend for this task. Read the documentation. He supports
+all necessary operations with a collection of contacts, as well as registration,
+login and update user using JWT. Use it instead of your backend created through
+the mockapi.io service.
 
-### Маршрутизація
+ser with a form
 
-Додай маршрутизацію з бібліотекою React Router. У програмі має бути кілька
-сторінок:
+- `/contacts` – a private route for working with the user's contact collection
 
-- `/register` – публічний маршрут реєстрації нового користувача з формою
-- `/login` – публічний маршрут логіна існуючого користувача з формою
-- `/contacts` – приватний маршрут для роботи з колекцією контактів користувача
+Add a navigation component `<Navigation>` with links to navigate to routes
 
-Додай компонент навігації `<Navigation>` з посиланнями для переходу по
-маршрутах.
+### User menu
 
-### Меню користувача
-
-Створи компонент `<UserMenu>`, що відображає пошту користувача і кнопку виходу з
-облікового запису. Ось як може виглядати його розмітка.
+Create a `<UserMenu>` component that displays the user's mail and a logout
+button account. Here's what its markup might look like.
 
 <div>
   <p>mango@mail.com</p>
   <button>Logout</button>
 </div>
 
-### Стилізація
+### Stylization
 
-Це фінальна версія програми, тому попрацюй над оформленням інтерфейсу. Можна
-використовувати бібліотеку стилізації або компонентів, наприклад
-[Chakra UI](https://chakra-ui.com/) або [Material-UI](https://material-ui.com/).
+This is the final version of the program, so work on the design of the
+interface. You can use a styling or component library, for example
+[Chakra UI](https://chakra-ui.com/) or [Material-UI](https://material-ui.com/).
 
 ---
 
